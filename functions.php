@@ -9,7 +9,12 @@
         wp_enqueue_script( 'materialize', get_template_directory_uri() . '/js/materialize.js', $deps = array(), $ver = false, $in_footer = true);
         wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', $deps = array(), $ver = false, $in_footer = true);
     }
-    
+
+    register_nav_menus( $locations = array(
+        'Main Menu' => 'The menu shown in the top of every page.',
+        'Mobile Menu' => 'The menu shown on mobile, usually the same as the Main Menu'
+    ) );
+
     add_action( 'wp_enqueue_scripts', 'materializefc_styles_scripts' );
 
  ?>
