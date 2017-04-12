@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
     <header id="site-header">
         <nav class="light-blue lighten-1" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><?php bloginfo('title') ?></a>
+            <div class="nav-wrapper container"><a id="logo-container" href="<?php echo home_url(); ?>" class="brand-logo" title="<?php bloginfo('title') ?>"><?php bloginfo('title') ?></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Navbar Link</a></li>
                 </ul>
