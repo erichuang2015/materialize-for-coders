@@ -10,7 +10,8 @@ main {
 
 .page-title {
     margin-top: 0px;
-    padding: 1%;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 
 .page-footer {

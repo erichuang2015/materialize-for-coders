@@ -2,7 +2,7 @@
 <main id="site-main">
     <div id="site-title" class="grey lighten-3">
         <div class="container">
-            <h2 class="page-title">Blog</h2>
+            <h2 class="page-title"><?php the_title(); ?></h2>
         </div>
         <!-- END div.container -->
     </div>

@@ -1,6 +1,3 @@
-</main>
-<!-- END main#site-main -->
-
 <footer class="page-footer light-blue">
     <div class="footer-copyright">
         <div class="container">

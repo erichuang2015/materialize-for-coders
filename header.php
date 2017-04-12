@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
     <header id="site-header">
         <nav class="light-blue lighten-1" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Site Name</a>
+            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><?php bloginfo('title') ?></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Navbar Link</a></li>
                 </ul>
@@ -27,12 +27,3 @@
         </nav>
     </header>
     <!-- END header#site-header -->
-
-    <main id="site-main">
-        <div id="site-title" class="grey lighten-3">
-            <div class="container">
-                <h2 class="page-title"><?php bloginfo('title') ?></h2>
-            </div>
-            <!-- END div.container -->
-        </div>
-        <!-- END div#site-title -->
