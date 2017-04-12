@@ -1,5 +1,6 @@
 <?php
 
+    //Define styles and scripts
     function materializefc_styles_scripts() {
         wp_enqueue_style( 'material-icons', '//fonts.googleapis.com/icon?family=Material+Icons');
         wp_enqueue_style( 'materialize', get_stylesheet_directory_uri() . '/css/materialize.css');
@@ -10,11 +11,17 @@
         wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', $deps = array(), $ver = false, $in_footer = true);
     }
 
+    add_action( 'wp_enqueue_scripts', 'materializefc_styles_scripts' );
+
+    // Register menu locations
     register_nav_menus( $locations = array(
         'Main Menu' => 'The menu shown in the top of every page.',
         'Mobile Menu' => 'The menu shown on mobile, usually the same as the Main Menu'
     ) );
 
-    add_action( 'wp_enqueue_scripts', 'materializefc_styles_scripts' );
+    // Renames 'Default Template' in page editor
+    add_filter('default_page_template_title', function() {
+    return __('Page (With Title)', 'materialize-fc');
+});
 
  ?>
