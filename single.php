@@ -1,8 +1,8 @@
 <?php get_header() ?>
-<main id="site-main">
+<main class="animated fadeIn" id="site-main">
     <div class="page-title grey lighten-3">
         <div class="container">
-            <a class="light-blue-text" href="#" title="Return to Blog"><i class="small material-icons">arrow_back</i><br>Back</a>
+            <a class="light-blue-text" href="#" title="Return to Blog" onclick="window.history.go(-1); return false;"><i class="tiny material-icons">arrow_back</i></a>
         </div>
         <!-- END div.container -->
     </div>
@@ -27,6 +27,16 @@
                 ?>
             </div>
             <!-- END div.container#site-content -->
+        </div>
+        <!-- END div.col s12 -->
+    </div>
+    <!-- END div.row -->
+    <div class="row">
+        <div class="col s12">
+            <div class="container">
+                <?php comments_template(); ?>
+            </div>
+            <!-- END div.container -->
         </div>
         <!-- END div.col s12 -->
     </div>
