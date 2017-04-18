@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main id="site-main">
+<main class="animated fadeIn" id="site-main">
     <div id="site-title" class="grey lighten-3">
         <div class="container">
             <h4 class="page-title light-blue-text"><?php the_title(); ?></h4>

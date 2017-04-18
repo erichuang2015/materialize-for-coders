@@ -1,7 +1,7 @@
 <footer class="page-footer light-blue">
     <div class="footer-copyright">
         <div class="container">
-            <p>&copy; 2017 Dylan Gore</p>
+            <p class="center-align">&copy; 2017 Dylan Gore</p>
         </div>
         <!-- END div.container -->
     </div>

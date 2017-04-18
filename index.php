@@ -1,8 +1,8 @@
 <?php get_header() ?>
-<main id="site-main">
-    <div id="site-title" class="grey lighten-3">
+<main  class="animated fadeIn" id="site-main">
+    <div class="page-title grey lighten-3">
         <div class="container">
-            <h4 class="page-title light-blue-text">Blog</h4>
+            <h4 class="light-blue-text">Blog</h4>
         </div>
         <!-- END div.container -->
     </div>
@@ -15,7 +15,7 @@
                     if (have_posts()) :
                     	while (have_posts()) : the_post(); ?>
                         <div id="card-wrapper" class="col s12">
-                            <div class="card horizontal">
+                            <div class="card horizontal z-depth-1 animated fadeInLeft">
                                 <!-- END div.card-image -->
                                 <div class="card-stacked">
                                     <div class="card-content">
@@ -26,7 +26,7 @@
                                     </div>
                                     <!-- END div.card-content -->
                                     <div class="card-action">
-                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Continue Reading</a>
+                                        <a class="light-blue-text text-darken-3" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More...</a>
                                     </div>
                                     <!-- END div.card-action -->
                                 </div>

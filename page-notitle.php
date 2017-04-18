@@ -5,7 +5,7 @@ Template Name: Page (No Title)
 ?>
 
 <?php get_header() ?>
-<main id="site-main">
+<main class="animated fadeIn" id="site-main">
     <div class="row">
         <div class="col s12">
             <div class="container" id="site-content">
