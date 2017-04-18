@@ -1,5 +1,8 @@
 <?php
 
+    // require_once('inc/admin-menu.php');
+    require_once('inc/dashboard.php');
+
     //Define styles and scripts
     function materializefc_styles_scripts() {
         wp_enqueue_style( 'material-icons', '//fonts.googleapis.com/icon?family=Material+Icons');
